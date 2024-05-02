@@ -1,0 +1,389 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 1%;
+  background-color: rgba(0, 0, 0, 0.77);
+}
+
+.logo {
+  color: #fff;
+  font-size: 28px;
+}
+
+.rojo {
+  color: #ea1538;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #ea1538;
+  transition: 0.3s;
+}
+
+button {
+  border: none;
+  background: #ea1538;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.4s;
+}
+button a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ea1538;
+}
+button:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.cuerpo {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.cuerpo img {
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 70%);
+}
+
+.overlay {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  transform: translate(50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  width: 40%;
+  padding: 20px;
+  border: solid #ea1538;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+}
+
+.title {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+.paragraph {
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: transparent;
+}
+
+.descrip {
+  width: 50%;
+  height: 40%;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  border: solid #ea1538;
+  z-index: 0;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  text-align: justify;
+}
+.descrip p {
+  color: #fff;
+  display: inline-block;
+  width: auto;
+  margin: 0 2.5%;
+}
+
+/* FOOTER */
+footer {
+  background-color: #111;
+}
+
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+  background-color: #fff;
+}
+.socialIcons a:hover {
+  background-color: #ea1538;
+  transition: 0.5s;
+}
+.socialIcons a:hover i {
+  background-color: #ea1538;
+  transition: 0.4s;
+}
+
+.footerNav {
+  margin: 30px 0;
+}
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a {
+  color: #fff;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5;
+}
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+
+.footerBottom {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p {
+  color: #fff;
+}
+
+.form-area {
+  padding-top: 7%;
+}
+
+.row.single-form {
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.left {
+  background: #ea1538;
+  padding: 200px 98px;
+}
+.left h2 {
+  font-family: poppins;
+  color: #fff;
+  font-weight: 700;
+  font-size: 48px;
+  background-color: #ea1538;
+}
+.left h2 span {
+  font-weight: 100;
+  background-color: #ea1538;
+}
+
+.single-form {
+  background: #fff;
+}
+
+.right {
+  padding: 70px 100px;
+  position: relative;
+  background-color: #fff;
+}
+.right form {
+  background-color: #fff;
+}
+
+.formu {
+  background-color: #fff;
+}
+.formu label {
+  background-color: #fff;
+}
+
+.formcont {
+  background-color: #fff;
+}
+
+.right i {
+  position: absolute;
+  font-size: 80px;
+  left: -27px;
+  top: 40%;
+  color: #fff;
+  background-color: transparent;
+}
+
+.form-control {
+  border: 2px solid #000;
+}
+
+.right button {
+  border: none;
+  border-radius: 0;
+  background: #252525;
+  width: 180px;
+  color: #fff;
+  padding: 15px 0;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.right button:hover {
+  background: #ea1538;
+  transform: scale(1.1);
+}
+
+/*CV */
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 2rem;
+}
+.pdf-container embed {
+  width: 80%;
+  height: 80vh;
+  border: 1px solid #ccc;
+}
+
+/*Carrusel*/
+.carousel-indicators {
+  position: unset;
+}
+.carousel-indicators img {
+  width: 70px;
+  display: block;
+}
+.carousel-indicators button {
+  width: max-content !important;
+}
+
+/*colores texto*/
+.blanco {
+  color: #fff;
+}
+
+/*Border publis*/
+.cartas {
+  border: solid #ea1538;
+}
+
+/*COVER FEDERAL*/
+.cover-section {
+  height: 30vh;
+}
+
+.cover-image {
+  background-image: url("../resourses/Carousel/redappe.jpeg");
+  background-size: cover;
+  background-position: 40% 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-content {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(53, 52, 52, 0.8);
+  border: 2px solid #ea1538;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.cover-title {
+  color: #ea1538;
+}
+
+.cover-text {
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .overlay {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 90vw;
+  }
+}
+@media (max-width: 1024px) {
+  nav ul li {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .footerNav ul {
+    flex-direction: column;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .left {
+    padding: 90px 15px;
+    text-align: center;
+  }
+  .left h2 {
+    font-size: 25px;
+  }
+  .right {
+    padding: 25px;
+  }
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 46%;
+  }
+  .right button {
+    width: 150px;
+    padding: 12px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
